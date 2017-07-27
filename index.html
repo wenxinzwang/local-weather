@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	    <!--  Meta  -->
+	    <meta charset="UTF-8" />
+        <title>Local Weather App</title>
+
+        <!--  Styles  -->
+        <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="container">
+		    <h1>Local Weather App</h1>
+			<div id="location"><i class="fa fa-spinner fa-pulse"></i></div>
+			<div id="temp"></div>
+			<div id="tempUnit" onclick="changeTempUnit()"></div>
+			<div id="summary"></div>
+            <canvas id="icon" width="64" height="64"></canvas>			
+		</div>
+		
+	    <footer>
+	        <p><a href="https://codepen.io/WXWang/">Made by Wenxin Wang</a> | <a href="https://darksky.net/poweredby/">Powered by Dark Sky</a></p>
+	    </footer>
+	</body>	
+	
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script> 
+    <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+	<script src="myScript.js"></script>
+<html>

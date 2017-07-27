@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background-color: grey;
+	position: relative;
+	font-family: arial;
+	color: grey;
+	vertical-align: baseline;
+}
+
+#container {
+	background-color: white;
+	max-width: 600px;
+	min-height: 300px;
+	margin: 10% auto auto auto;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#container div {
+	margin: 5px 0px;
+}
+
+#temp {
+	display: inline;
+}
+
+#tempUnit {
+	cursor: pointer;
+	color: blue;
+	display: inline;
+}
+#tempUnit:hover {
+	color: darkblue;
+}
+
+footer {
+	text-align: center;
+	color: white;
+	font-size: 15px;
+}
+
+footer a {
+	text-decoration: none;
+}
+footer a:link, footer a:visited, footer a:hover, footer a:active {
+	color: white;
+}
