@@ -3,15 +3,17 @@
 }
 
 body {
-	background-color: grey;
+	background: url("../img/field-sm.jpg") no-repeat center fixed;
+	background-size: cover;
 	position: relative;
 	font-family: arial;
-	color: grey;
+	color: DarkSlateGrey;
 	vertical-align: baseline;
 }
 
 #container {
-	background-color: white;
+	background-color: rgba(256, 256, 256, 0.7);
+	width: 80%;
 	max-width: 600px;
 	min-height: 300px;
 	margin: 10% auto auto auto;
@@ -25,17 +27,28 @@ body {
 	margin: 5px 0px;
 }
 
+#location {
+	font-size: 30px;
+}
+
 #temp {
 	display: inline;
+	font-size: 50px;
 }
 
 #tempUnit {
 	cursor: pointer;
 	color: blue;
 	display: inline;
+	font-size: 50px;
 }
 #tempUnit:hover {
-	color: darkblue;
+	color: MidnightBlue;
+}
+
+#today {
+	display: inline;
+	font-size: 12px;
 }
 
 footer {
@@ -49,4 +62,14 @@ footer a {
 }
 footer a:link, footer a:visited, footer a:hover, footer a:active {
 	color: white;
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		background: url("../img/field.jpg") no-repeat center fixed;
+		background-size: cover;
+	}
+	#container {
+		margin-top: 15%;
+	}
 }
